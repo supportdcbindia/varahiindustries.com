@@ -71,6 +71,9 @@
             <p><strong>Varahi Industries</strong> offers high-performance <strong>Ribbon Blenders</strong> engineered for uniform blending of dry powders, granules, and low-viscosity liquids. These machines are widely used across <strong>chemical, pharmaceutical, food,</strong> and <strong>cosmetic</strong> industries due to their consistent output, rugged design, and customizable features.</p>
             <p>Built with precision and quality, our blenders ensure <strong>homogeneous mixing</strong> even for small additive ratios—ideal for formulations where batch uniformity is critical.</p>
           </div>
+          <?php
+                        include("inq-btn.php");
+                    ?>
         </div>
       </div>
     </div>

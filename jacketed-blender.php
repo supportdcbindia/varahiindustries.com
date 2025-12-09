@@ -68,7 +68,9 @@
                         <p>With its jacketed design, the blender enables heating, cooling, or both simultaneously—perfect
                             for temperature-sensitive materials and processes.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

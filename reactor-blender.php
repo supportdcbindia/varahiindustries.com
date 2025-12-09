@@ -73,7 +73,9 @@
                         <p>Engineered for durability and efficiency, the Reactor Blender allows simultaneous
                             heating, cooling, and mixing—ideal for complex processes that demand exact conditions.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

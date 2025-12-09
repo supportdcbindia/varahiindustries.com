@@ -66,7 +66,9 @@
                         <p>A controlled air stream carries ground material to the outlet while the <em>whizzer</em> returns oversize to the chamber for re-grinding. The fan conveys classified material to the cyclone collector and dust is managed via a three-way connection to a dust collector.</p>
                         <p><strong>Miracle Mill / Hammer Mill:</strong> a high-production alternative using a perforated liner for classification (no whizzer), achieving slightly lower fineness than a pulverizer.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

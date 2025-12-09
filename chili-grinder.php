@@ -71,7 +71,9 @@
                             to the required mesh size; hole diameter and pitch are selected as per target fineness. No
                             whizzer classifier is required—the liner itself provides separation.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

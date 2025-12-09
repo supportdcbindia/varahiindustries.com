@@ -75,7 +75,9 @@
                             polypropylene, cotton, antistatic, etc.) are selected to suit chemical and thermal
                             conditions.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

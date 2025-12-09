@@ -66,6 +66,9 @@
                         <p><strong>Varahi Industries’ Air Jet Mill</strong> is an advanced micronizing system that reduces particle sizes to the sub-micron range with <em>no moving parts inside the grinding chamber</em>. Using high-velocity jet streams, it achieves ultra-fine sizes with high purity and minimal contamination—ideal for pharmaceuticals, pigments, minerals, agrochemicals, and heat-sensitive materials.</p>
                         <p>Its robust, modular design ensures precision, efficiency, and clean operation for industries demanding high-quality micronized products.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

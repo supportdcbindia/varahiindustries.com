@@ -828,7 +828,7 @@
     <div class="container">
         <div class="ctaContentWrapper">
             <h5>Join Our Growing Family of Success Stories</h5>
-            <a href="#!">Become Our Partner</a>
+            <a href="#!" class="click1">Become Our Partner</a>
         </div>
     </div>
 </div>

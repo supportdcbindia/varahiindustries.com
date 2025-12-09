@@ -70,7 +70,9 @@
                             required mesh size; hole diameter and pitch are chosen per target fineness. Separation is
                             achieved through this liner itself, simplifying the system.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

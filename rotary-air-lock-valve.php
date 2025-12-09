@@ -70,7 +70,9 @@
                         <p>Essential in dust collection, cyclone discharge, bin/hopper unloading and feeder applications,
                             the valve ensures smooth, dust-free handling with reliable sealing performance.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

@@ -70,6 +70,9 @@
                             particles through the perforated mesh for uniform screening while an integrated brush
                             assembly keeps the screen clean to prevent clogging and maintain throughput.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
 
                 </div>
             </div>

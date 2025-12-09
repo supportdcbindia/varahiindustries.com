@@ -71,6 +71,9 @@
                             bauxite, calcite, coal, limestone, gypsum, POP, marble, dolomite, bentonite, and more. Mechanical impact
                             with air classification delivers superior fineness control with minimal dust and safe operation.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
 
                 </div>
             </div>

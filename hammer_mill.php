@@ -70,7 +70,9 @@
                         <p><strong>Varahi Industries’ Hammer Mill</strong>—also known as the <strong>“Miracle Mill”</strong>—is a heavy-duty, dependable size-reduction machine optimized for efficient grinding and pulverizing across diverse materials.</p>
                         <p>Designed to serve sectors like <strong>chemicals, pharmaceuticals, minerals, agriculture,</strong> and <strong>food processing</strong>, it delivers high throughput with low maintenance.</p>
                     </div>
-                    <?php include('inquiry-button.php'); ?>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

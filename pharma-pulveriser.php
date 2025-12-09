@@ -66,6 +66,9 @@
                         <p><strong>Varahi Industries</strong> is a trusted name in pharmaceutical processing equipment, offering high-precision Pharma Pulverizers engineered for <strong>GMP-compliant</strong>, contamination-free powder production of APIs, excipients, and herbal products.</p>
                         <p>With robust construction, advanced rotor–hammer technology, and efficient airflow systems, these pulverizers deliver uniform particle size, high productivity, and minimal dust generation. Systems are fully customizable to meet specific pharma requirements for fineness and output. End-to-end support—from installation and training to maintenance and spares—ensures long-term, reliable performance.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

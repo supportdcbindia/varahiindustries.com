@@ -75,6 +75,9 @@
               <li><div class="icon"><i class="fa-solid fa-check"></i></div><div class="content">Ideal for bulk solids, granules, powders, and small-sized materials.</div></li>
             </ul>
           </div>
+          <?php
+                        include("inq-btn.php");
+                    ?>
         </div>
       </div>
 

@@ -64,7 +64,9 @@
                         <p><strong>Varahi Industries’ Lab Air Jet Mill</strong> is a precision micronizing system for laboratory and pilot-scale work. It reduces powders to sub-micron sizes with <em>no moving parts inside the grinding chamber</em>, delivering reproducible, contamination-free results for R&amp;D, QC, and small-batch production in pharma, chemicals, pigments, and advanced materials.</p>
                         <p>The compact, modular design enables high efficiency, fast cleaning, and easy scale-up to production systems.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

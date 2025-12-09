@@ -5,7 +5,7 @@
                     <h5>Address</h5>
                     <ul>
                         <li><a href="#!"> Plot No. 83/6, Nr. Kotak Mahindra Bank,<br> Phase-1, Vatva GIDC, Vatva, <br>Ahmedabad - 382445 Gujarat (India)</a></li>
-                        <li><span>Office Line : </span> <a href="#!">+91 97251 11314 / 99252 91596</a></li>
+                        <li><span>Office Line : </span><a href="tel:+919925291596">+91 99252 91596</a> <a href="tel:+919725111314">+91 97251 11314</a>  </li>
                         <li><span>Email : </span> <a href="mailto:info@varahiindustries.com">info@varahiindustries.com</a></li>
                     </ul>
                 </div>
@@ -20,27 +20,31 @@
                 <div class="footerLinks pl-15 ProductsLinks">
                     <h5>Our Products</h5>
                     <ul>
-                        <li><a href="#!">Air Classifler </a></li>
-                        <li><a href="#!">Rotary Air Lock Valve</a></li>
-                        <li><a href="#!">Chemicals Blender</a></li>
-                        <li><a href="#!">Chilli Grinder</a></li>
-                        <li><a href="#!">Food Ribbon Blender</a></li>
-                        <li><a href="#!">Hammer Mill</a></li>
-                        <li><a href="#!">Ice Crsher</a>
-                        <li><a href="#!">Impex Pulverizer</a>
-                        <li><a href="#!">Jaw Crusher</a>
-                        <li><a href="#!">Jecketed Blender</a>
+                        <li><a href="air-classifier.php">Air Classifler </a></li>
+                        <li><a href="blender.php">Blender</a></li>
+                        <li><a href="pulveriser.php">Pulveriser</a></li>
+                        <li><a href="jet-mill.php">Jet Mill</a></li>
+                        <li><a href="crusher.php">Crusher</a></li>
+                        <li><a href="hammer-mills.php">Hammer Mills</a>
+                        <li><a href="vibro-sifter.php">Vibro Sifter</a>
+                        <li><a href="centrifugal-siever.php">Centrifugal Siever</a>
+                        <li><a href="screw-conveyor-feeder.php">Screw Conveyor/ Feeder</a>
+                        <li><a href="pulse-jet-dust-collector.php">Pulse Jet Dust Collector</a>
+                         <li><a href="rotary-air-lock-valve.php">Rotary Air Lock Valve</a>
+                         
+                         <li><a href="bag-dumping-station.php">Bag Dumping Station</a>
+                         <li><a href="pesticide-powder-formulation-plant.php">Pesticide Powder Formulation Plant</a>
                     </ul>
                 </div>
                 <div class="footerLinks pl-15 ProductsLinks DesktopNone">
                     <h5>Useful Links</h5>
                     <ul>
-                        <li><a href="#!"> Home</a></li>
-                        <li><a href="#!">About Us</a></li>
-                        <li><a href="#!">Our Products</a></li>
-                        <li><a href="#!"> Applications</a></li>
-                        <li><a href="#!">Our Clients</a></li>
-                        <li><a href="#!"> Contact</a></li>
+                        <li><a href="/"> Home</a></li>
+                        <li><a href="about-us.php">About Us</a></li>
+                        <li><a href="our-product.php">Products</a></li>
+                        <li><a href="applications.php"> Applications</a></li>
+                        <li><a href="clients.php">Clients</a></li>
+                        <li><a href="contact-us.php"> Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="footerLinks ProductsLinks">
@@ -53,12 +57,12 @@
 
                 <div class="footerLinks pl-15 justify-content-end">
                     <ul class="justify-content-end">
-                        <li><a href="#!"> Home</a></li>
-                        <li><a href="#!">About Us</a></li>
-                        <li><a href="#!">Our Products</a></li>
-                        <li><a href="#!"> Applications</a></li>
-                        <li><a href="#!">Our Clients</a></li>
-                        <li><a href="#!"> Contact</a></li>
+                        <li><a href="/"> Home</a></li>
+                        <li><a href="about-us.php">About Us</a></li>
+                        <li><a href="our-product.php">Products</a></li>
+                        <li><a href="applications.php"> Applications</a></li>
+                        <li><a href="clients.php">Clients</a></li>
+                        <li><a href="contact-us.php"> Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -72,7 +76,9 @@
     <script src="./assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-
+<script src="assets/js/jquery.validate.min.js?ver=1763106556"></script>
+<script src="assets/js/index.js?ver=1763106556"></script>
+<script src="assets/js/form-buzz.js?ver=1763106556"></script>
 
     <script>
         const bannerSwiper = new Swiper(".bannerSwiper", {

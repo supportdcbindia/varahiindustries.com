@@ -68,7 +68,9 @@
                             minerals, pigments, agrochemicals, and heat-sensitive materials, it offers high productivity,
                             low maintenance, and superior product quality through precision-engineered components and robust construction.</p>
                     </div>
-
+                    <?php
+                    include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

@@ -72,7 +72,9 @@
                             material properties and screw RPM; an optional VFD enables precise speed control to match process
                             requirements. Simple, reliable, and low-maintenance for continuous operations.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

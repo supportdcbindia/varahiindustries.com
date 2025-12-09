@@ -77,6 +77,9 @@
                                 lower achievable fineness than a pulverizer. A perforated liner in the lower half of the chamber
                                 performs classification—no whizzer required.</em></p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

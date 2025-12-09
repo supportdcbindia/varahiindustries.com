@@ -66,6 +66,9 @@
                         <p><strong>Varahi Industries’ Lump Crusher</strong> provides efficient size reduction of lumps and clumps in bulk materials to ensure smooth downstream processing and handling. The single-shaft design features evenly spaced impact fingers that work against a fixed comb to break oversized agglomerates into manageable sizes.</p>
                         <p>Material is fed from the top through a wide-flanged inlet, impacted by the rotating fingers, crushed against the fixed comb, and discharged from the bottom—ready for conveyor transfer or further processing.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
 
                 </div>
             </div>

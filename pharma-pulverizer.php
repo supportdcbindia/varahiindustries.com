@@ -71,6 +71,9 @@
                            output. We also provide end-to-end support—from installation and operator training to maintenance
                            and spare parts—for long-term, reliable performance.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
 
                 </div>
             </div>

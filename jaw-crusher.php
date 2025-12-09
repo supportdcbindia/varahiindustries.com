@@ -71,6 +71,9 @@
                            jaw plate and a moving swing jaw driven by an eccentric mechanism. The crushed product exits
                            from the bottom outlet, ensuring uniform size and optimized throughput.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
 
                 </div>
             </div>

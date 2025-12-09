@@ -67,7 +67,9 @@
                             nutraceuticals, and other pharma formulations.</p>
                         <p>Designed for GMP environments with validated cleaning and closed-system operation for dust control.</p>
                     </div>
-
+                    <?php
+                    include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

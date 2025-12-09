@@ -71,6 +71,9 @@
                             speed tuning to suit bulk density, flow characteristics, and process requirements. Compact,
                             low-maintenance, and energy-efficient—ideal for continuous lifting operations.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
 
                 </div>
             </div>

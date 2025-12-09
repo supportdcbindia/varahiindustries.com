@@ -71,7 +71,9 @@
                         <p>Widely used in spice, food, pharmaceutical, and herbal industries, it handles fresh or dried
                             turmeric and can produce coarse to ultra-fine grades as per requirement.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>
@@ -181,6 +183,9 @@
                 <p><em>Specifications are nominal and vary with turmeric quality, moisture, and operating conditions.</em></p>
             </div>
         </div>
+        <?php
+                        include("inq-btn.php");
+                    ?>
     </div>
 </div>
 

@@ -72,7 +72,9 @@
                             plate to crush it. The crushed ice falls to the collection area ready for use. Throughput
                             depends on feeding rate and lifting speed.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

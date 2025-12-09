@@ -71,6 +71,9 @@
                         <p><em>Miracle Mill / Hammer Mill</em> is the high-production variant using a perforated liner
                             for classification—ideal for medium-fineness requirements.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>
@@ -178,6 +181,9 @@
                 <p class="mt-2">All data are nominal and may vary with material properties and operating conditions.</p>
             </div>
         </div>
+        <?php
+                        include("inq-btn.php");
+                    ?>
     </div>
 </div>
 

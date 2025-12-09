@@ -69,7 +69,9 @@
                             closed handling maintains cleanliness, safety and consistent quality—independent of particle
                             size, shape or density (suspension flow through ducts).</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

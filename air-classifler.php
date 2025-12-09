@@ -84,7 +84,9 @@
                         <p>Whether you're removing heavy contaminants like iron and silica or refining powder quality
                             through grit elimination, Varahi Air Classifier offers a dependable solution.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

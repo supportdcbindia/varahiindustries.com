@@ -66,7 +66,9 @@
                         <p><strong>Varahi Industries' Ribbon Blender</strong> is a high-performance mixer for homogeneous blending of dry powders, granules, and small liquid additions. Engineered for precision, it delivers uniform mixing in minimal time for pharmaceutical, chemical, agricultural, food, cosmetic, and mineral applications.</p>
                         <p>Available from <strong>500</strong> to <strong>20,000 liters</strong>, the range supports both batch production and bulk handling with low maintenance and dependable performance.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>
@@ -183,6 +185,9 @@
                 <p class="mt-2">Custom capacities available on request.</p>
             </div>
         </div>
+        <?php
+                        include("inq-btn.php");
+                    ?>
     </div>
 </div>
 

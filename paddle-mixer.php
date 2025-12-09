@@ -66,6 +66,9 @@
                             powders, granules, and semi-solid materials. Engineered for chemicals, food, pharmaceuticals,
                             and minerals, it delivers uniform mixing with gentle handling—preventing degradation or segregation.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>
@@ -156,6 +159,9 @@
                 <p><em>Custom capacities available on request.</em></p>
             </div>
         </div>
+        <?php
+                        include("inq-btn.php");
+                    ?>
     </div>
 </div>
 

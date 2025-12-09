@@ -71,6 +71,9 @@
                             automatic reverse pulse-jet filter) and returned to the process—improving recovery,
                             reducing contamination, and mitigating explosive dust risks.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
 
                 </div>
             </div>

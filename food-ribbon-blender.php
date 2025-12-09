@@ -69,7 +69,9 @@
                         <p>With capacities ranging from small batches to large-scale production, it is ideal for flour,
                             spices, sugar mixes, baking powders, dairy powders, and more.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

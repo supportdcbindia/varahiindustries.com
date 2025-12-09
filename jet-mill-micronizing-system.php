@@ -77,6 +77,9 @@
                         <p><strong>Varahi Jet Mill</strong> is an advanced micronizing system designed to reduce particle sizes to the sub-micron level without any moving parts inside the grinding chamber. Built for <em>precision, efficiency, and versatility</em>, it utilizes high-velocity jet streams to achieve ultra-fine particle sizes — ideal for <strong>pharmaceuticals, pigments, minerals, agrochemicals,</strong> and heat-sensitive materials.</p>
                         <p>Manufactured with robust design and modular options, Varahi Jet Mills are widely used across industries where <strong>ultra-fine grinding, high purity,</strong> and <strong>clean operation</strong> are essential.</p>
                     </div>
+                    <?php
+                        include("inq-btn.php");
+                    ?>
 
                 </div>
             </div>

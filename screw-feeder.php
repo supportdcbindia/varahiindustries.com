@@ -70,6 +70,9 @@
             <p><strong>Varahi Screw Feeders</strong> are robust mechanical feeders designed to consistently feed material into <strong>Single Toggle</strong> or <strong>Double Toggle</strong> jaw crushers for size reduction. These systems ensure controlled flow, minimize bridging, and improve crushing efficiency—ideal for hard, abrasive, and heavy materials.</p>
             <p><em>Engineered for crushing hard materials like granite, dolomite, limestone, ferro alloys, coal, and more.</em></p>
           </div>
+          <?php
+                        include("inq-btn.php");
+                    ?>
         </div>
       </div>
     </div>

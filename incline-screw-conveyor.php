@@ -72,7 +72,9 @@
                             throughput control, an optional VFD adjusts speed based on material characteristics and
                             process requirements—delivering a low-maintenance, energy-efficient solution for continuous duty.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>

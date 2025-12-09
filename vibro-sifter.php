@@ -66,7 +66,9 @@
                         <p><strong>Varahi Industries</strong> manufactures Vibro Sifters (also called Vibro/Gyro Screens) for efficient material separation and classification of dry powders or wet mediums. Using controlled mechanical vibration, these screens deliver reliable, high-throughput sieving in pharmaceuticals, chemicals, food processing, minerals, and more.</p>
                         <p>The machine generates horizontal, vertical, and circular vibrations. Feed enters the upper deck and is separated by particle size; fines pass through to lower decks while coarse fractions remain on top—enabling multi-deck classification.</p>
                     </div>
-
+<?php
+                        include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>
@@ -160,6 +162,9 @@
                 <p>Capacities and specifications vary with material properties and operating conditions.</p>
             </div>
         </div>
+        <?php
+                        include("inq-btn.php");
+                    ?>
     </div>
 </div>
 

@@ -70,6 +70,9 @@
             <p><strong>Varahi Industries</strong> presents the <strong>Chilli Grinder (Blower Pulverizer)</strong>—a high-performance, automatic spice processing unit designed for efficient, cool, and dust-free grinding of red chillies and various spices.</p>
             <p>Built for both small-scale processors and commercial plants, this machine delivers outstanding throughput and consistent output.</p>
           </div>
+          <?php
+                        include("inq-btn.php");
+                    ?>
         </div>
       </div>
     </div>

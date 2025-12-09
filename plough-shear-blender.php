@@ -70,7 +70,9 @@
                         <p>Ideal for demanding industrial processes that need fast, homogeneous mixing of dry powders,
                             pastes, and granules—even when materials are sticky, viscous, or prone to agglomeration.</p>
                     </div>
-
+                    <?php
+                    include("inq-btn.php");
+                    ?>
                 </div>
             </div>
         </div>
