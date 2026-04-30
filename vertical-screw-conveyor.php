@@ -279,4 +279,12 @@
     </div>
 </section>
 
+<div class="ctaSec">
+    <div class="container">
+        <div class="ctaContentWrapper">
+            <h5>Still can't decide which machine is best for you?</h5>
+            <a href="#!" class="click1">Contact us Now</a>
+        </div>
+    </div>
+</div>
 <?php include('footer.php') ?>

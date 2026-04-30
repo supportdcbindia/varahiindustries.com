@@ -14,25 +14,33 @@
             <!-- Gallery -->
             <div class="col-sm-12 col-md-6">
                 <div id="carousel-custom" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
+                    <div class="carousel-inner" >
                         <?php
-                        $nb_elem_per_page = 100;
-                        $page = isset($_GET['page']) ? max(0, intval($_GET['page']) - 1) : 0;
-                        $data = glob("./assets/images/products/pulverizer/mini-pulverizer/*.*"); // <-- put product images here
-                        $number_of_pages = max(1, intval(count($data) / $nb_elem_per_page) + 1);
+                            $images = glob("./assets/images/products/pulverizer/mini-pulverizer/*.*");
+                            $firstImage = $images[0] ?? null;
 
-                        $images = array_slice($data, $page * $nb_elem_per_page, $nb_elem_per_page);
-                        $first = true;
-                        foreach ($images as $p) { ?>
-                            <div class="carousel-item <?php echo $first ? 'active' : ''; ?>">
-                                <div class="productImage">
-                                    <a class="fancybox thumbnail" rel="lightbox" href="<?php echo $p; ?>" title="Mini Pulverizer">
-                                        <img src="<?php echo $p; ?>" alt="Mini Pulverizer Image">
-                                    </a>
-                                </div>
+                            if ($firstImage) { ?>
+                        <div class="carousel-item active" style="height: 420px;">
+                            <img src="<?php echo $firstImage; ?>" class="d-block w-100" alt="Vibro Sifter">
+                        </div>
+                        <?php } ?>
+
+                        <!-- 2nd Slide : Video -->
+                        <div class="carousel-item"  style="height: 420px;">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/gPBN9qUil3M?si=Kw1SkpvpwRufiaSD"
+                                    allow="autoplay; encrypted-media" allowfullscreen>
+                                </iframe>
                             </div>
-                        <?php $first = false;
-                        } ?>
+                        </div>
+
+                        <?php
+                        foreach (array_slice($images, 1) as $img) { ?>
+                        <div class="carousel-item">
+                            <img src="<?php echo $img; ?>" class="d-block w-100" alt="Vibro Sifter">
+                        </div>
+                        <?php } ?>
                     </div>
 
                     <button class="carousel-control-prev" type="button" data-bs-target="#carousel-custom" data-bs-slide="prev">
@@ -45,18 +53,27 @@
                     </button>
 
                     <div class="carousel-indicators meartlab">
-                        <?php $index = 0;
-                        foreach ($images as $p) { ?>
-                            <button type="button"
-                                data-bs-target="#carousel-custom"
-                                data-bs-slide-to="<?php echo $index; ?>"
-                                class="<?php echo $index === 0 ? 'active' : ''; ?>"
-                                aria-current="<?php echo $index === 0 ? 'true' : 'false'; ?>"
-                                aria-label="Slide <?php echo $index + 1; ?>">
-                                <img src="<?php echo $p; ?>" alt="thumb <?php echo $index + 1; ?>">
-                            </button>
-                        <?php $index++;
-                        } ?>
+                        <?php
+                        $slide = 0;
+
+                        /* 1st image */
+                        ?>
+                        <button class="active" data-bs-target="#carousel-custom" data-bs-slide-to="0">
+                            <img src="<?= $images[0]; ?>">
+                        </button>
+
+                        <!-- 2nd : video -->
+                        <button data-bs-target="#carousel-custom" data-bs-slide-to="1">
+                            <img src="https://img.youtube.com/vi/gPBN9qUil3M/mqdefault.jpg">
+                        </button>
+
+                        <?php
+                        /* rest images */
+                        foreach (array_slice($images,1) as $img) { $slide++; ?>
+                        <button data-bs-target="#carousel-custom" data-bs-slide-to="<?= $slide+1 ?>">
+                            <img src="<?= $img ?>">
+                        </button>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -360,5 +377,13 @@
         </ul>
     </div>
 </section>
+<div class="ctaSec">
+    <div class="container">
+        <div class="ctaContentWrapper">
+            <h5>Still can't decide which machine is best for you?</h5>
+            <a href="#!" class="click1">Contact us Now</a>
+        </div>
+    </div>
+</div>
 
 <?php include('footer.php') ?>

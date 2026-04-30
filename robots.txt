@@ -12,4 +12,4 @@ Allow: /images/
 Allow: /css/
 Allow: /js/
 
-Sitemap: https://saptpower.com/sitemap.xml
+Sitemap: https://varahiindustries.com/sitemap.xml

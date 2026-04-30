@@ -16,42 +16,83 @@
                     <div class="carousel-inner">
                         <?php
                         $nb_elem_per_page = 100;
-                        $page = isset($_GET['page']) ? intval($_GET['page']) - 1 : 0;
+                        $page = isset($_GET['page']) ? max(0, intval($_GET['page']) - 1) : 0;
                         $data = glob("./assets/images/products/ribbon-blender/*.*"); // place product images here
-                        $number_of_pages = max(1, intval(count($data) / $nb_elem_per_page) + 1);
-
+                        $number_of_pages = max(1, ceil(count($data) / $nb_elem_per_page));
+                        
+                        $page = min($page, $number_of_pages - 1);
                         $images = array_slice($data, $page * $nb_elem_per_page, $nb_elem_per_page);
-                        $first = true;
-                        foreach ($images as $p) { ?>
-                            <div class="carousel-item <?php echo $first ? 'active' : ''; ?>">
-                                <div class="productImage">
-                                    <a class="fancybox thumbnail" rel="lightbox" href="<?php echo $p; ?>" title="Product Image">
-                                        <img src="<?php echo $p; ?>" alt="Ribbon Blender Image">
-                                    </a>
-                                </div>
+                        
+                        // First item - product image (active)
+                        if (!empty($images)) { ?>
+                        <div class="carousel-item active">
+                            <div class="productImage"
+                                style="height: 400px; display: flex; align-items: center; justify-content: center;">
+                                <a class="fancybox thumbnail" rel="lightbox" href="<?php echo $images[0]; ?>"
+                                    title="Product Image">
+                                    <img src="<?php echo $images[0]; ?>" alt="Ribbon Blender Image"
+                                        style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                                </a>
                             </div>
-                        <?php $first = false;
-                        } ?>
+                        </div>
+                        <?php }
+                        
+                        // Second item - YouTube video
+                        ?>
+                        <div class="carousel-item">
+                            <div class="productImage">
+                                <iframe width="100%" height="400"
+                                    src="https://www.youtube.com/embed/Q_6ItYce43I?si=z29sMEw5HF9uNvcm&autoplay=1"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <?php
+                        
+                        // Remaining images
+                        foreach (array_slice($images, 1) as $p) { ?>
+                        <div class="carousel-item">
+                            <div class="productImage"
+                                style="height: 400px; display: flex; align-items: center; justify-content: center;">
+                                <a class="fancybox thumbnail" rel="lightbox" href="<?php echo $p; ?>"
+                                    title="Product Image">
+                                    <img src="<?php echo $p; ?>" alt="Ribbon Blender Image"
+                                        style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                                </a>
+                            </div>
+                        </div>
+                        <?php } ?>
                     </div>
 
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-custom" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-custom"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-custom" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-custom"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
 
                     <div class="carousel-indicators meartlab">
-                        <?php $index = 0;
-                        foreach ($images as $p) { ?>
-                            <button type="button" data-bs-target="#carousel-custom" data-bs-slide-to="<?php echo $index; ?>"
-                                class="<?php echo $index === 0 ? 'active' : ''; ?>"
-                                aria-current="<?php echo $index === 0 ? 'true' : 'false'; ?>"
-                                aria-label="Slide <?php echo $index + 1; ?>">
-                                <img src="<?php echo $p; ?>" alt="thumb <?php echo $index + 1; ?>">
-                            </button>
+                        <button type="button" data-bs-target="#carousel-custom" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1">
+                            <img src="<?php echo !empty($images) ? $images[0] : ''; ?>" alt="thumb 1">
+                        </button>
+                        <button type="button" data-bs-target="#carousel-custom" data-bs-slide-to="1" class=""
+                            aria-current="false" aria-label="Slide 2">
+                            <img src="https://img.youtube.com/vi/Q_6ItYce43I/mqdefault.jpg" alt="Video thumbnail"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </button>
+                        <?php $index = 2;
+                        foreach (array_slice($images, 1) as $p) { ?>
+                        <button type="button" data-bs-target="#carousel-custom" data-bs-slide-to="<?php echo $index; ?>"
+                            class="" aria-current="false" aria-label="Slide <?php echo $index + 1; ?>">
+                            <img src="<?php echo $p; ?>" alt="thumb <?php echo $index + 1; ?>">
+                        </button>
                         <?php $index++;
                         } ?>
                     </div>
@@ -63,10 +104,14 @@
                 <div class="productDetailsContent">
                     <h2>Ribbon Blender</h2>
                     <div class="desc">
-                        <p><strong>Varahi Industries' Ribbon Blender</strong> is a high-performance mixer for homogeneous blending of dry powders, granules, and small liquid additions. Engineered for precision, it delivers uniform mixing in minimal time for pharmaceutical, chemical, agricultural, food, cosmetic, and mineral applications.</p>
-                        <p>Available from <strong>500</strong> to <strong>20,000 liters</strong>, the range supports both batch production and bulk handling with low maintenance and dependable performance.</p>
+                        <p><strong>Varahi Industries' Ribbon Blender</strong> is a high-performance mixer for
+                            homogeneous blending of dry powders, granules, and small liquid additions. Engineered for
+                            precision, it delivers uniform mixing in minimal time for pharmaceutical, chemical,
+                            agricultural, food, cosmetic, and mineral applications.</p>
+                        <p>Available from <strong>500</strong> to <strong>20,000 liters</strong>, the range supports
+                            both batch production and bulk handling with low maintenance and dependable performance.</p>
                     </div>
-<?php
+                    <?php
                         include("inq-btn.php");
                     ?>
                 </div>
@@ -84,15 +129,18 @@
         <ul class="list">
             <li>
                 <div class="iconContent">
-                    <div class="icon"><i class="fa-solid fa-arrows-spin"></i></div><strong>Counter-Current Motion</strong>
+                    <div class="icon"><i class="fa-solid fa-arrows-spin"></i></div><strong>Counter-Current
+                        Motion</strong>
                 </div>
-                <p>U-shaped trough houses a double helical ribbon: the outer ribbon moves material in one direction, the inner ribbon in the opposite—creating rapid axial and radial circulation.</p>
+                <p>U-shaped trough houses a double helical ribbon: the outer ribbon moves material in one direction, the
+                    inner ribbon in the opposite—creating rapid axial and radial circulation.</p>
             </li>
             <li>
                 <div class="iconContent">
                     <div class="icon"><i class="fa-solid fa-gear"></i></div><strong>Driven Agitator</strong>
                 </div>
-                <p>Agitator shaft is powered by a motor with gear reducer to generate triple-action mixing (axial, radial, tangential) for high homogeneity, even with minor additives.</p>
+                <p>Agitator shaft is powered by a motor with gear reducer to generate triple-action mixing (axial,
+                    radial, tangential) for high homogeneity, even with minor additives.</p>
             </li>
         </ul>
     </div>
@@ -202,7 +250,8 @@
                 <ul class="Featureslist OneGrid">
                     <li>
                         <div class="icon"><i class="fa-solid fa-feather-pointed"></i></div>
-                        <div class="content">Gentle yet thorough mixing for powders, granules &amp; small liquid additions</div>
+                        <div class="content">Gentle yet thorough mixing for powders, granules &amp; small liquid
+                            additions</div>
                     </li>
                     <li>
                         <div class="icon"><i class="fa-solid fa-wrench"></i></div>
@@ -226,7 +275,8 @@
                 <ul class="Featureslist OneGrid">
                     <li>
                         <div class="icon"><i class="fa-solid fa-diagram-project"></i></div>
-                        <div class="content">Triple-action mixing (axial, radial, tangential) for precision blending</div>
+                        <div class="content">Triple-action mixing (axial, radial, tangential) for precision blending
+                        </div>
                     </li>
                     <li>
                         <div class="icon"><i class="fa-solid fa-box"></i></div>
@@ -415,5 +465,14 @@
         </ul>
     </div>
 </section>
+
+<div class="ctaSec">
+    <div class="container">
+        <div class="ctaContentWrapper">
+            <h5>Still can't decide which machine is best for you?</h5>
+            <a href="#!" class="click1">Contact us Now</a>
+        </div>
+    </div>
+</div>
 
 <?php include('footer.php') ?>

@@ -4,9 +4,12 @@
                 <div class="footerLinks SocialLinks pl-15">
                     <h5>Address</h5>
                     <ul>
-                        <li><a href="#!"> Plot No. 83/6, Nr. Kotak Mahindra Bank,<br> Phase-1, Vatva GIDC, Vatva, <br>Ahmedabad - 382445 Gujarat (India)</a></li>
-                        <li><span>Office Line : </span><a href="tel:+919925291596">+91 99252 91596</a> <a href="tel:+919725111314">+91 97251 11314</a>  </li>
-                        <li><span>Email : </span> <a href="mailto:info@varahiindustries.com">info@varahiindustries.com</a></li>
+                        <li><a href="#!"> Plot No. 83/6, Nr. Kotak Mahindra Bank,<br> Phase-1, Vatva GIDC, Vatva,
+                                <br>Ahmedabad - 382445 Gujarat (India)</a></li>
+                        <li><span>Office Line : </span><a href="tel:+919925291596">+91 99252 91596</a> <a
+                                href="tel:+919725111314">+91 97251 11314</a> </li>
+                        <li><span>Email : </span> <a
+                                href="mailto:info@varahiindustries.com">info@varahiindustries.com</a></li>
                     </ul>
                 </div>
                 <div class="footerLinks pl-15 SocialLinks">
@@ -30,10 +33,10 @@
                         <li><a href="centrifugal-siever.php">Centrifugal Siever</a>
                         <li><a href="screw-conveyor-feeder.php">Screw Conveyor/ Feeder</a>
                         <li><a href="pulse-jet-dust-collector.php">Pulse Jet Dust Collector</a>
-                         <li><a href="rotary-air-lock-valve.php">Rotary Air Lock Valve</a>
-                         
-                         <li><a href="bag-dumping-station.php">Bag Dumping Station</a>
-                         <li><a href="pesticide-powder-formulation-plant.php">Pesticide Powder Formulation Plant</a>
+                        <li><a href="rotary-air-lock-valve.php">Rotary Air Lock Valve</a>
+
+                        <li><a href="bag-dumping-station.php">Bag Dumping Station</a>
+                        <li><a href="pesticide-powder-formulation-plant.php">Pesticide Powder Formulation Plant</a>
                     </ul>
                 </div>
                 <div class="footerLinks pl-15 ProductsLinks DesktopNone">
@@ -49,7 +52,10 @@
                 </div>
                 <div class="footerLinks ProductsLinks">
                     <h5>Our Location</h5>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.411100071864!2d72.6326967!3d22.9719056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e88a4dbf95353%3A0xa7ce002cc9992c72!2sVarahi%20Industries!5e0!3m2!1sen!2sin!4v1759224970199!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.411100071864!2d72.6326967!3d22.9719056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e88a4dbf95353%3A0xa7ce002cc9992c72!2sVarahi%20Industries!5e0!3m2!1sen!2sin!4v1759224970199!5m2!1sen!2sin"
+                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="footerBottom">
@@ -72,13 +78,14 @@
         </div>
     </footer>
 
+
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<script src="assets/js/jquery.validate.min.js?ver=1763106556"></script>
-<script src="assets/js/index.js?ver=1763106556"></script>
-<script src="assets/js/form-buzz.js?ver=1763106556"></script>
+    <script src="assets/js/jquery.validate.min.js?ver=1763106556"></script>
+    <script src="assets/js/index.js?ver=1763106556"></script>
+    <script src="assets/js/form-buzz.js?ver=1763106556"></script>
 
     <script>
         const bannerSwiper = new Swiper(".bannerSwiper", {
@@ -158,8 +165,8 @@
                 autoStart: true, // Enable thumbnail slider automatically
             }
         });
-    </script>
-    <script>
+            </script>
+            <script>
         window.addEventListener("scroll", function() {
             const header = document.querySelector(".customHeader");
             if (window.scrollY > 100) {
@@ -169,6 +176,107 @@
                 header.classList.remove("fixed");
             }
         });
+    </script>
+
+
+
+    <script>
+        const clientSlider = new Swiper('.clientSlider', {
+            loop: true,
+            speed: 1500,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 6,
+            spaceBetween: 30,
+            freeMode: true,
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 2
+                },
+                480: {
+                    slidesPerView: 3
+                },
+                768: {
+                    slidesPerView: 4
+                },
+                1024: {
+                    slidesPerView: 6
+                }
+            }
+        });
+    </script>
+
+
+    <script>
+        var swiper = new Swiper(".applicationSwiper", {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 3,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll(".techBtn").forEach(btn => {
+            btn.addEventListener("click", function() {
+                let modal = document.getElementById(this.dataset.modal);
+                if (modal) {
+                    modal.style.display = "flex";
+                }
+            });
+        });
+
+        document.querySelectorAll(".closeTech").forEach(btn => {
+            btn.onclick = () => btn.closest(".techModal").style.display = "none";
+        });
+
+        window.onclick = e => {
+            if (e.target.classList.contains("techModal")) {
+                e.target.style.display = "none";
+            }
+        }
+        // cta model 
+        document.querySelectorAll(".getPriceBtn").forEach(btn=>{
+    btn.addEventListener("click", function(){
+
+        // Close the Tech Specs modal
+        let modal = this.closest(".techModal");
+        if(modal){
+            modal.style.display = "none";
+        }
+
+        // Trigger your existing enquiry form
+        let formBtn = document.querySelector(".click1.enquiry-btn");
+        if(formBtn){
+            formBtn.click();
+        }
+    });
+});
     </script>
     </body>
 
